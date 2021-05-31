@@ -39,7 +39,8 @@ def autocomplete():
     query = "SELECT COUNT(*) from branches WHERE branch LIKE %s"
     rows = connection.execute(query, ("%%" + q + "%%"))
     for x in rows:
-        json_data['page_count'] = (x[0] + limit - 1) // limit   
+        json_data['page_count'] = (x[0] + limit - 1)
+    json_data['page_count']=json_data['page_count']-limit   
     return json_data
 
 @app.route('/api/branches')
