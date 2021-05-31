@@ -1,0 +1,15 @@
+django
+gunicorn
+django-heroku
+click           
+Flask           
+itsdangerous    
+Jinja2
+MarkupSafe      
+pip           
+psycopg2
+psycopg2-binary 
+setuptools     
+Werkzeug        
+wheel
+sqlalchemy             
